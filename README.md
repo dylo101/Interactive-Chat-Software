@@ -1,5 +1,5 @@
 # Interactive Chat Software
-Linux environment chat softwareusing socket APIs.
+This program implements a TCP-based client-server chat application in C. The client and server communicate through socket APIs in a half-duplex style, meaning only one side sends a message at a time while the other waits to respond. Messages are displayed with timestamps, and either side can end the chat by sending quit. If the client sends quit, the client disconnects while the server continues waiting for new connections; if the server sends quit, both processes terminate.
 
 # Socket APIs used in code:
 1. socket (creates socket)
